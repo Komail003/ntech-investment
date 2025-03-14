@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ntech Investments LTD</title>
+	<!-- Favicon -->
+	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+		rel="stylesheet">
+		<link rel="icon" type="image/png" href="assets/images/ntechAssets/logo.png" />
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<!-- Bootstrap & Plugins CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<style>
+		html,
+		body {
+			font-family: "Nunito", sans-serif !important;
+		}
+
+		.loader {
+			width: 20px;
+			height: 20px;
+			border: 5px solid #3A2CC2;
+			border-bottom-color: transparent;
+			border-radius: 50%;
+			display: inline-block;
+			box-sizing: border-box;
+			animation: rotation 1s linear infinite;
+		}
+
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+	<!-- Custom CSS -->
+	<link href="assets/css/blue.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	<!-- ***** Preloader Start ***** -->
+	<div id="preloader">
+		<div id="loader" class="spinner">
+			<div id="shadow"></div>
+			<div id="box"></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
+
+
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="index.html" class="logo">
+							<img loading="lazy" src="assets/images/ntechAssets/logo.png" width="30px" alt="Ntech" />
+							<span style="color: #204f79;">Ntech Investments</span>
+						</a>
+						<!-- ***** Logo End ***** -->
+
+
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav">
+							<li><a href="index.html#welcome">Home</a></li>
+							<li class="submenu">
+								<a href="javascript:;">Services</a>
+								<ul>
+									<li><a href="sipTrunk.html">Sip Trunk A-Z Voice</a></li>
+									<li><a href="telephonenumbering.html">Telephone DID Numbering</a></li>
+									<li><a href="carrierservices.html">Carrier Services</a></li>
+									<li><a href="Consultancy.html">Consultancy</a></li>
+								</ul>
+							</li>
+							<li class="submenu"><a href="javascript:;">News</a>
+								<ul>
+									<li><a href="news.html">Press Releases</a></li>
+									<li><a href="Newsletter.html">Mailing List</a></li>
+								</ul>
+							</li>
+							<li class="submenu"><a href="javascript:;">Support</a>
+								<ul>
+									<li><a href="documenttemplate.html">Document And Template</a></li>
+									<li><a href="Contact.html">Contact Sales and Account Admin</a></li>
+									<li><a href="techsupport.html">Contact NOC Technical Support</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+								</ul>
+							</li>
+
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+						<a class="menu-trigger">
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+
+						<!-- ***** Header Buttons Start ***** -->
+						<!-- <ul class="header-buttons">
+							<li><a  class="btn-nav-line" href="blue-features.html">Apps</a></li>
+							<li><a  class="btn-nav-primary" href="Contact.html">Support</a></li>
+						</ul> -->
+						<!-- ***** Header Buttons End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
+	<!-- ***** Welcome Area Start ***** -->
+	<div class="welcome-area" id="welcome">
+		<!-- ***** Header Background Image Start ***** -->
+		<div class="right-bg">
+			<!-- <video src="assets/images/ntechAssets/hero.mp4" class="img-fluid float-right" alt="" loop autoplay muted> -->
+			<!-- <iframe width="1000" height="400" src="https://www.youtube.com/embed/N4opxiuN92c?si=GoWiaSiDg0Sx8aG8"
+				title="YouTube video player" frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+			<!-- <iframe width="1500" height="500"
+				src="https://www.youtube.com/embed/N4opxiuN92c?autoplay=1&controls=0&mute=1&loop=1&playlist=N4opxiuN92c"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+			</iframe> -->
+			<div id="iframeContainer"></div>
+		</div>
+		<!-- ***** Header Background Image End ***** -->
+
+		<div class="header-bg">
+			<img loading="lazy" src="assets/images/header-bg.svg" class="img-fluid" alt="">
+		</div>
+
+		<!-- ***** Header Text Start ***** -->
+		<div class="header-text">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-12 col-sm-12">
+						<h1>For all your managed <span> service</span> and reseller <span>needs </span>.</h1>
+						<p>Empowering Your Business Growth with Tailored Solutions.</p>
+						<a class="btn-primary-line mblbtn mt-4" href="./Contact.html">
+							Contact Us
+						</a>
+						<!-- <a  href="#" class="btn-primary-line">LEARN MORE</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Header Text End ***** -->
+
+		<!-- ***** Play Button Start ***** -->
+		<!-- <div class="play-button-wrapper">
+			<a  href="https://www.youtube.com/watch?v=dPZTh2NKTm4" class="btn-play">
+				<i class="fa fa-play"></i>
+			</a>
+		</div> -->
+		<!-- ***** Play Button End ***** -->
+	</div>
+	<!-- ***** Welcome Area End ***** -->
+	<!-- ***** Features Small Start ***** -->
+	<section class="section features-home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row">
+						<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+							<a href="./ucaas.html">
+								<div class="features-small-item">
+									<div class="icon">
+										<i class="fa fa-cloud"></i>
+									</div>
+									<h5 class="features-title">Unified Communications as a Service</h5>
+									<p>With our carrier-grade reliability, you can trust that your communication
+										infrastructure is robust and dependable.</p>
+									<div class="next">
+										<i class="fa fa-angle-right"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+
+						<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+							<a href="./crm.html">
+								<div class="features-small-item">
+									<div class="icon">
+										<i class="fa fa-laptop"></i>
+									</div>
+									<h5 class="features-title">CRM Integration</h5>
+									<p>Our CRM solution is designed to integrate seamlessly with your existing systems,
+										providing a holistic view of customer interactions.</p>
+									<div class="next">
+										<i class="fa fa-angle-right"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+
+						<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+							<a href="./telephonenumbering.html">
+								<div class="features-small-item">
+									<div class="icon">
+										<i class="fa fa-video-camera"></i>
+									</div>
+									<h5 class="features-title">Telephone Numbering</h5>
+									<p>From local and toll-free numbers to international routing, our solutions ensure
+										seamless connectivity for your business.</p>
+									<div class="next">
+										<i class="fa fa-angle-right"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+
+						<!-- ***** Features Small Item Start ***** -->
+						<!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+							<a  href="blue-features-single.html" class="features-small-item">
+								<div class="icon">
+									<i class="fa fa-server"></i>
+								</div>
+								<h5 class="features-title">Disaster Recovery</h5>
+								<p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.</p>
+								<div class="next">
+									<i class="fa fa-angle-right"></i>
+								</div>
+							</a>
+						</div> -->
+						<!-- ***** Features Small Item End ***** -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Features Small End ***** -->
+
+	<section class="image-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+					data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+					<img loading="lazy" src="assets/images/ntechAssets/cloud.jpg" class="img-fluid d-block mx-auto"
+						alt="App">
+				</div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+					<!-- <div class="left-heading"> -->
+					<h3 class="section-title">Our Modular Business carrier grade voice system includes:</h3>
+					<!-- </div> -->
+					<div class="left-text">
+						<div class="row">
+							<div class="col-md-6">
+
+								<ul
+									style="font-size: 14px !important;margin: 2px;  line-height: 1.8; list-style: disc;">
+									<li>1.UCaaS. Unified Communications as a Service Carrier Grade Reliability</li>
+									<li>2.CRM</li>
+									<li>3.Billing Control
+									</li>
+									<li>4.Class 4 Switching
+									</li>
+									<li>5.Class 5 Origination and termination services
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+
+								<ul
+									style="font-size: 14px !important;margin: 2px;  line-height: 1.8; list-style: disc	;">
+									<li>6.Interconnect, route and pricing managers
+									</li>
+									<li>7.Office PBX with call and extension, packages, inbound numbers
+									</li>
+									<li>8.Carrier Services
+									</li>
+									<li>9.Online SMS
+									</li>
+									<li>10.Payment Gateways
+									</li>
+								</ul>
+							</div>
+							<p class="black mt-3">Full unified communications services, for any device.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- ***** Features Big Item Start ***** -->
+	<!-- ***** Features Big Item Start ***** -->
+	<section class="image-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+					data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+					<img loading="lazy" src="assets/images/ntechAssets/cloud2.jpeg" class="img-fluid d-block mx-auto"
+						alt="App">
+				</div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+					<div class="left-heading">
+						<h2 class="section-title">Services</h2>
+					</div>
+					<div class="left-text">
+
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="sipTrunk.html">
+									<i class="fa fa-angle-right"></i>
+									<span>Sip Trunk A-Z Voice</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="telephonenumbering.html">
+									<i class="fa fa-angle-right"></i>
+									<span>Telephone DID Numbering</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="carrierservices.html">
+									<i class="fa fa-angle-right"></i>
+									<span>Carrier Services</span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ***** Parallax Start ***** -->
+	<div class="parallax" id="parallax-text">
+		<div class="parallax-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="info">
+							<p>Consultancy and project services, available, Bespoke solutions to suit your needs.</p>
+							<a class="btn-white-line" href="/techsupport.html">Submit Project Requests Here</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ***** Parallax End ***** -->
+
+
+	<!-- ***** Blog Start ***** -->
+	<section class="section white" id="blog">
+		<div class="container">
+			<!-- ***** Section Title Start ***** -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="center-heading">
+						<h2 class="section-title">Consulting and Project Services</h2>
+					</div>
+				</div>
+				<div class="offset-lg-3 col-lg-6">
+					<div class="center-text">
+						<p>Industry Insight, Systems Integration, marketing and bespoke project solutions to get you
+							over the line. <br />
+							Through our network of industry qualified trusted partners we can cut through your problems,
+							salvage your project and get back on the road.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- ***** Section Title End ***** -->
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="blog-post-thumb">
+						<div class="img">
+							<img loading="lazy" src="assets/images/ntechAssets/telecom1.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<h3>
+								<a href="blue-blog-single.html">We can't promise miracles.</a>
+							</h3>
+							<div class="text">
+
+							</div>
+							<a href="./Consultancy.html" class="btn-primary-line">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="blog-post-thumb">
+						<div class="img">
+							<img loading="lazy" src="assets/images/ntechAssets/telecom2.jpeg" alt="">
+						</div>
+						<div class="blog-content">
+							<h3>
+								<a href="">We can get you running. </a>
+							</h3>
+							<div class="text">
+
+							</div>
+							<a href="./Consultancy.html" class="btn-primary-line">Read More</a>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-post-thumb">
+						<div class="img">
+							<img src="assets/images/photos/blog/3.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<h3>
+								<a  href="blue-blog-single.html">Corporate IT Solutions Adds Neva as Senior Account
+									Executive</a>
+							</h3>
+							<div class="text">
+								Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor
+								malesuada. Morbi auctor tortor eu.
+							</div>
+							<a  href="blue-blog-single.html" class="btn-primary-line">Read More</a>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+
+	<div style="background-color: #F7FAFD;">
+
+
+		<section class="container">
+			<div class="contact-bottom">
+				<div class="row">
+					<!-- ***** Contact Text Start ***** -->
+					<div class="col-lg-4 col-md-6 col-sm-12 m-0 p-3">
+						<h2 class="black">General Enquiries
+						</h2>
+						<div class="contact-text ms-1 mt-2">
+							<p>We would love to hear from you. </p>
+						</div>
+					</div>
+					<!-- ***** Contact Text End ***** -->
+					<!-- ***** Contact Form Start ***** -->
+					<div class="col-lg-8 col-md-6 col-sm-12 m-0 p-0">
+						<div class="contact-form m-0 p-3">
+							<form action="" method="post">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<input type="text" id="name" name="name" placeholder="Name *">
+									</div>
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<input type="text" id="company_name" name="company_name"
+											placeholder="Company Name *">
+									</div>
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<input type="text" id="country" name="country" placeholder="Country *">
+									</div>
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<input type="tel" id="contact_number" name="contact_number"
+											placeholder="Contact number *">
+									</div>
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<input id="email" name="email" type="email" placeholder="Email * ">
+									</div>
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<input type="text" id="contact_info" name="contact_info"
+											placeholder="Whatsapp, Skype, Live ID, Twitter *">
+									</div>
+									<div class="col-lg-12">
+										<textarea name="message" id="message"
+											placeholder="Your message (optional)"></textarea>
+									</div>
+									<div class="col-lg-12">
+										<div class="alert alert-success d-none" id="successmsg" role="alert">Email has
+											been sent successfully.</div>
+										<div class="alert alert-danger d-none" role="alert" id="errormsg">Please fill
+											all the mandatory fields marked with *.</div>
+										<div id="loading" class="d-none">
+											Sending Request... <span class="loader"></span>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="g-recaptcha"
+											data-sitekey="6LczfbIpAAAAALc2QjZbrBC-xcMi6CK5kVdVbukD"></div>
+									</div>
+									<div class="col-lg-12">
+										<button id="sendButton" type="button"
+											class="btn-primary-line pull-right mt-3">SEND</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- ***** Contact Form End ***** -->
+
+				</div>
+			</div>
+		</section>
+		<!-- ***** Blog End ***** -->
+	</div>
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12">
+					<div class="d-flex">
+						<img loading="lazy" src="assets/images/ntechAssets/logo.png" width="30px" class="logo" alt="">
+						&nbsp;Ntech Investments LTD
+					</div>
+					<div class="text">For all your managed service and reseller needs .
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+					<h5>Helpful Links</h5>
+					<ul class="footer-nav">
+						<li><a href="aboutus.html"><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
+						<li><a href="sipTrunk.html"><i class="fa fa-angle-right"></i><span>Sip trunk</span></a></li>
+						<li><a href="carrierservices.html"><i class="fa fa-angle-right"></i><span>Carrier
+									Services</span></a></li>
+						<li><a href="telephonenumbering.html"><i class="fa fa-angle-right"></i><span>Telephone
+									Numbering</span></a></li>
+						<li><a href="Consultancy.html"><i class="fa fa-angle-right"></i><span>Consultancy</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+					<h5>Support</h5>
+					<ul class="footer-nav">
+						<li><a href="./documenttemplate.html"><i class="fa fa-angle-right"></i><span>Privacy
+									Policy</span></a></li>
+						<li><a href="./techsupport.html"><i class="fa fa-angle-right"></i><span>Tech Support</span></a>
+						</li>
+						<li><a href="./Contact.html"><i class="fa fa-angle-right"></i><span>Contact Us</span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h5>Contact Us</h5>
+					<div class="address">
+						<p>The Bristol Office, 2nd Floor 5 High Street, Westbury On Trym, Bristol, England, BS9 3BY
+						</p>
+						<p>Phone: +44 1173 620 189</p>
+						<p><span>Email:</span>sales@ntechinvestments.com</p>
+						<ul class="social">
+							<li><a target="_blank" href="https://www.linkedin.com/in/david-parker-96aa582/"><i
+										class="fa fa-linkedin-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright">Developed By <a target="_blank" href="https://fahadtechsolution.com/">Fahad
+							Tech Solution</a>, All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ***** Footer End ***** -->
+
+
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="assets/js/scrollreveal.min.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/imgfix.min.js"></script>
+
+	<!-- Global Init -->
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/iframe.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script> -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			document.getElementById('sendButton').addEventListener('click', function () {
+				// Gather form data
+				var formData = {
+					name: document.getElementById('name').value,
+					company_name: document.getElementById('company_name').value,
+					country: document.getElementById('country').value,
+					contact_number: document.getElementById('contact_number').value,
+					email: document.getElementById('email').value,
+					contact_info: document.getElementById('contact_info').value,
+					message: document.getElementById('message').value
+				};
+				if (formData.name == "" || formData.company_name == "" || formData.country == "" || formData.contact_number == "" || formData.email == "" || formData.contact_info == "") {
+					// alert("Please fill all the fields to send the message");
+					document.getElementById("errormsg").classList.remove("d-none");
+					return false;
+				}
+				document.getElementById("errormsg").classList.add("d-none");
+				document.getElementById("sendButton").disabled = true;
+				document.getElementById("loading").classList.remove("d-none");
+				// Send AJAX request
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', 'sendemail.php', true);
+				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.onreadystatechange = function () {
+					if (xhr.readyState === 4) {
+						if (xhr.status === 200) {
+							console.log(xhr.responseText); // Log response to console
+							var response = JSON.parse(xhr.responseText);
+							if (response.status === 'success') {
+								// alert('Message has been sent');
+								// Show success alert
+								document.getElementById("successmsg").classList.remove("d-none");
+							} else {
+								alert('Error sending message'); // Show error alert
+							}
+						} else {
+							alert('Error sending message'); // Show error alert
+						}
+					}
+					document.getElementById("sendButton").disabled = false;
+					document.getElementById("loading").classList.add("d-none");
+				};
+				xhr.send(JSON.stringify(formData));
+			});
+		});
+
+		
+	</script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+
+</html>
